@@ -18,8 +18,8 @@ jobs:
       - name: Add remote 
         env:
           HG: ${{ secrets.HG }}
-        run: git remote add space https://SorinAbrudan:$HF@huggingface.co/spaces/SorinAbrudan/ml-ops-demo
+        run: git remote add space https://SorinAbrudan:$HG@huggingface.co/spaces/SorinAbrudan/ml-ops-demo
       - name: Push to hub
         env:
           HG: ${{ secrets.HG }}
-        run: git push --force https://SorinAbrudan:$HF@huggingface.co/spaces/SorinAbrudan/ml-ops-demo main
+        run: git push --force https://SorinAbrudan:$HG@huggingface.co/spaces/SorinAbrudan/ml-ops-demo main
